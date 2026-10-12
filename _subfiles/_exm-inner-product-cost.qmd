@@ -1,0 +1,18 @@
+:::{#exm-inner-product-cost}
+#### Counting the operations in an inner product
+
+The inner product of two vectors $\vx, \vz \in \reals^D$ is
+
+$$\vx^\top \vz = x_1 z_1 + x_2 z_2 + \cdots + x_D z_D.$$
+
+Computing it takes $D$ multiplications, one for each product $x_d z_d$,
+and $D - 1$ additions to sum the $D$ products:
+$2D - 1$ arithmetic operations in all.
+Since $2D - 1 \le 2D$ for every $D \ge 1$,
+the cost is $O(D)$, with $D$ in the role of $n$, $c = 2$ and $n_0 = 1$ in @def-big-o.
+Since $2D - 1 \ge D$ for every $D \ge 1$, it is also $\Omega(D)$,
+so it is $\Theta(D)$.
+When a machine learning text says an inner product "costs $O(D)$",
+it means this count of operations, up to a constant factor.
+
+:::

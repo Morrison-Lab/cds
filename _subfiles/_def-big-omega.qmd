@@ -1,0 +1,9 @@
+:::{#def-big-omega}
+#### Big-Omega notation
+
+For $f$ and $g$ as in @def-big-o,
+we write $f(n) = \Omega(g(n))$ if $g(n) = O(f(n))$:
+there are a constant $c > 0$ and an integer $n_0$ such that
+$f(n) \ge c \, g(n)$ for every $n \ge n_0$.
+
+:::

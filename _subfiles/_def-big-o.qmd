@@ -1,0 +1,13 @@
+:::{#def-big-o}
+#### Big-O notation
+
+Let $f$ and $g$ be functions from the positive integers to $[0, \infty)$.
+We write $f(n) = O(g(n))$ if there are a constant $c > 0$
+and an integer $n_0$ such that
+
+$$f(n) \le c \, g(n) \quad \text{for every } n \ge n_0.$$
+
+That is, $f$ grows no faster than a constant multiple of $g$
+once $n$ is large enough.
+
+:::
