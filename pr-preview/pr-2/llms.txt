@@ -1,7 +1,0 @@
-# Computational Complexity for Data Science
-
-> Computational complexity for data science courses
-
-## Pages
-
-- [Computational Complexity for Data Science](https://morrison-lab.github.io/cds/index.llms.md)
