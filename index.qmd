@@ -1,5 +1,5 @@
 ---
-title: "Quarto Website Template"
+title: "Computational Complexity for Data Science"
 format:
   html: default
   revealjs:
@@ -10,69 +10,60 @@ format:
     output-file: index.docx
 ---
 
-# Welcome {.unnumbered}
+## Welcome {.unnumbered}
 
-This is a Quarto website template that you can use to create your own website.
+Computational complexity asks how much time, memory or randomness
+a problem needs, whatever algorithm solves it.
+Data science meets it whenever fitting a model exactly turns out to be
+computationally hard,
+which is one reason practical methods use greedy search or a convex surrogate loss.
 
-The notes are available in multiple formats:
+These notes collect the computational complexity that data science courses use.
+They are new, and the topic pages are still to be written.
+The planned topics are:
 
-- **HTML Website**: Navigate using the navbar for easy access to all pages
-- **RevealJS Slides**: Each chapter can generate a presentation format with `-slides.html` suffix
-- **PDF Handouts**: Each chapter can generate a PDF handout with `-handout.pdf` suffix
-- **DOCX Documents**: Each chapter can generate a Microsoft Word document with `.docx` extension
+- models of computation: Turing machines and computability
+- time and space complexity, and the classes P and NP
+- reductions and NP-completeness
+- randomized computation
+- communication and information complexity
 
-## About this website
+Information theory has its own library,
+[*Information Theory for Data Science*](https://morrison-lab.github.io/ids/).
+Results that connect the two live in the library that holds
+their main statement, and the other links to them.
 
-This website is built with [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. You can use Quarto to create books, websites, blogs, presentations, and more from markdown files.
+## Starting materials {.unnumbered}
 
-## Getting Started
+These notes are written fresh, but they draw on the following books and Stanford course pages.
 
-To use this template:
+- Sanjeev Arora and Boaz Barak, *Computational Complexity: A Modern Approach*,
+  the main starting point for complexity theory.
+- [CS154: Introduction to the Theory of Computation](https://theory.stanford.edu/~liyang/teaching/computability.html)
+  (Omer Reingold and Li-Yang Tan), which covers automata, computability and complexity,
+  using Michael Sipser's *Introduction to the Theory of Computation*,
+  with lecture slides and videos.
+- [CS154: Introduction to Automata and Complexity Theory](https://theory.stanford.edu/~rajeev/cs154.html)
+  (Spring 2009, with Rajeev Motwani among the course staff),
+  with handouts, homework and a reading list.
+- [*Introduction to Automata Theory, Languages, and Computation*](http://infolab.stanford.edu/~ullman/ialc.html),
+  Jeff Ullman's home page for the book, which is the textbook the 2009 CS154 page links.
+  It has solutions to starred exercises, errata, slides, and past CS154 course materials.
+- [CS254: Computational Complexity](https://theory.stanford.edu/~liyang/teaching/complexity.html)
+  (Li-Yang Tan), which covers space complexity, the polynomial hierarchy, randomized and non-uniform computation,
+  and interactive proofs.
+  It uses Arora and Barak and Avi Wigderson's *Mathematics and Computation*,
+  and links a reading for each lecture.
 
-1. **Update the configuration**: Edit `_quarto-website.yml` to change the website title, site URL, and navigation menu.
+## Using these notes in another site {.unnumbered}
 
-2. **Add your content**: Create new `.qmd` files for each page and add them to the navigation menu and the sidebar in `_quarto-website.yml` (the sidebar order sets the previous/next page links).
+Course sites link to these pages by URL;
+they do not include this repository as a git submodule.
+A host site that keeps a copy of this repository at its root, named `cds`,
+can still include fragments with paths that start with `cds/`.
+This site includes its own fragments the same way,
+through a `cds` symlink that points at the repository root.
 
-3. **Customize the style**: Modify `styles.css` to change the appearance of your website.
-
-4. **Add references**: Update `references.bib` with your citations.
-
-## Building the website
-
-To render the website locally:
-
-```bash
-quarto render
-```
-
-To preview the website with live reload:
-
-```bash
-quarto preview
-```
-
-The rendered output will be in the `_site/` directory, which can be published to GitHub Pages.
-
-## Publishing to GitHub Pages
-
-This template includes a GitHub Actions workflow that automatically builds and publishes your website to GitHub Pages when you push to the main branch.
-
-To enable GitHub Pages:
-
-1. Go to your repository settings
-2. Navigate to "Pages" in the left sidebar
-3. Under "Build and deployment", set Source to "GitHub Actions"
-4. Push your changes to the main branch
-5. The workflow will automatically build and deploy your website
-
-Your website will be available at `https://YOUR-USERNAME.github.io/YOUR-REPO/`
-
-## License
-
-Add your license information here.
-
-## References {.unnumbered}
-
-::: {#refs}
-:::
-
+Quarto resolves `@id` cross-references only within one rendered page,
+so a host site that links to a result here
+uses an explicit link to the page and anchor.
