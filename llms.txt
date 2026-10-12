@@ -5,3 +5,4 @@
 ## Pages
 
 - [Computational Complexity for Data Science](https://morrison-lab.github.io/cds/index.llms.md)
+- [Asymptotic notation](https://morrison-lab.github.io/cds/asymptotic-notation.llms.md)

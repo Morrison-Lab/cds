@@ -4,13 +4,17 @@ Code
 
 Published
 
-Last modified: 2026-10-12 01:05:40 (PDT)
+Last modified: 2026-10-12 02:31:22 (PDT)
 
 ## Welcome
 
 Computational complexity asks how much time, memory or randomness a problem needs, whatever algorithm solves it. Data science meets it whenever fitting a model exactly turns out to be computationally hard, which is one reason practical methods use greedy search or a convex surrogate loss.
 
-These notes collect the computational complexity that data science courses use. They are new, and the topic pages are still to be written. The planned topics are:
+These notes collect the computational complexity that data science courses use. They are new. The pages written so far are:
+
+- [Asymptotic notation](asymptotic-notation.llms.md): big-O, big-Omega and big-Theta, and what it means for a computation to cost \\O(D)\\
+
+The planned topics still to come are:
 
 - models of computation: Turing machines and computability
 - time and space complexity, and the classes P and NP
