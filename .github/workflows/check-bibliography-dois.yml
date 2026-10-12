@@ -21,3 +21,7 @@ jobs:
     permissions:
       contents: read
     uses: Morrison-Lab/gha/.github/workflows/check-bibliography-dois.yml@v3
+    with:
+      # cormen2009introduction: the book has no DOI.
+      exclude-keys: >-
+        cormen2009introduction

@@ -1,0 +1,10 @@
+::: {#rem-big-o-equals-sign}
+#### The equals sign is one-way
+
+$O(g(n))$ stands for a set of functions,
+and $f(n) = O(g(n))$ says that $f$ belongs to it.
+So $n = O(n^2)$ is true, but $n^2 = O(n)$ is false,
+and the statement cannot be read from right to left.
+@cormen2009introduction [section 3.1] reads the notation this way.
+
+:::
