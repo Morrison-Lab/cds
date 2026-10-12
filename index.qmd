@@ -14,10 +14,9 @@ format:
 
 Computational complexity asks how much time, memory or randomness
 a problem needs, whatever algorithm solves it.
-Data science meets it whenever a fitting problem turns out to be hard:
-finding the best decision tree, or the linear classifier with the
-fewest training mistakes, is NP-hard,
-which is why practical methods use greedy search or a convex surrogate loss.
+Data science meets it whenever fitting a model exactly turns out to be
+computationally hard,
+which is one reason practical methods use greedy search or a convex surrogate loss.
 
 These notes collect the computational complexity that data science courses use.
 They are new, and the topic pages are still to be written.
