@@ -15,13 +15,13 @@ f(n)
 $$
 
 So $f(n) = O(n^2)$, with $c = 4$ and $n_0 = 5$ in @def-big-o.
-Since $f(n) \ge 3n^2$ for every $n$, also $f(n) = \Omega(n^2)$,
-and so $f(n) = \Theta(n^2)$.
+Since $f(n) \ge 3n^2$ for every $n$, also $f(n) = \Omega(n^2)$ (@def-big-omega),
+and so $f(n) = \Theta(n^2)$ (@def-big-theta).
 
 But $f(n)$ is not $O(n)$.
 If it were, there would be $c > 0$ and $n_0$ with $3n^2 + 5n \le c \, n$
 for every $n \ge n_0$.
 Dividing both sides by $n > 0$ gives $3n + 5 \le c$ for every $n \ge n_0$,
-which fails once $n > (c - 5)/3$.
+which fails for any $n$ larger than both $n_0$ and $(c - 5)/3$.
 
 :::

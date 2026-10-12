@@ -2,8 +2,12 @@
 #### Big-Omega notation
 
 For $f$ and $g$ as in @def-big-o,
-we write $f(n) = \Omega(g(n))$ if $g(n) = O(f(n))$:
-there are a constant $c > 0$ and an integer $n_0$ such that
-$f(n) \ge c \, g(n)$ for every $n \ge n_0$.
+we write $f(n) = \Omega(g(n))$ if there are a constant $c > 0$
+and an integer $n_0$ such that
+
+$$f(n) \ge c \, g(n) \quad \text{for every } n \ge n_0.$$
+
+Dividing by $c$ shows that this holds exactly when $g(n) = O(f(n))$,
+with constant $1/c$.
 
 :::

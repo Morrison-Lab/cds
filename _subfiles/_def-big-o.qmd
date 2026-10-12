@@ -9,5 +9,6 @@ $$f(n) \le c \, g(n) \quad \text{for every } n \ge n_0.$$
 
 That is, $f$ grows no faster than a constant multiple of $g$
 once $n$ is large enough.
+This is the definition of @arora2009computational [section 0.3].
 
 :::
