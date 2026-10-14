@@ -24,6 +24,10 @@ The pages written so far are:
 
 - [Asymptotic notation](asymptotic-notation.qmd):
   big-O, big-Omega and big-Theta, and what it means for a computation to cost $O(D)$
+- [Kolmogorov complexity](kolmogorov-complexity.qmd):
+  the length of the shortest program that prints a string,
+  why most strings are incompressible and no program computes it,
+  and how its average per symbol approaches Shannon entropy
 
 The planned topics still to come are:
 

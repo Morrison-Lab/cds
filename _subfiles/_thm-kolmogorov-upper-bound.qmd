@@ -1,0 +1,32 @@
+:::{#thm-kolmogorov-upper-bound}
+#### A string is never much more complex than its length
+
+There is a constant $c$ such that every binary string $x$ of length $n$ has
+
+$$K(x \mid n) \le n + c$$
+
+and, when $n \ge 1$,
+
+$$K(x) \le n + 2 \log_2 n + c.$$
+
+:::
+
+::: {.proof}
+For the first bound, the program "print the next $n$ digits"
+followed by the $n$ digits of $x$ outputs $x$.
+Because $U$ is given $n$, the program needs no marker to show where it ends,
+and its fixed part has some length $c_1$.
+So $K(x \mid n) \le n + c_1$.
+
+For the second bound, the program must also describe $n$
+in a way that shows where the description ends.
+Write $n$ in binary, which takes $\lfloor \log_2 n \rfloor + 1$ digits,
+repeat each digit twice, and end with the pair $01$.
+This takes $2 \lfloor \log_2 n \rfloor + 4 \le 2 \log_2 n + 4$ digits.
+A program that reads this description of $n$ and then prints the next $n$ digits
+has length at most $n + 2 \log_2 n + 4 + c_2$
+for a constant $c_2$.
+Take $c = \max(c_1, c_2 + 4)$.
+@cover2006elements [section 14.2] prove both bounds.
+
+:::

@@ -1,0 +1,78 @@
+---
+title: "Kolmogorov complexity"
+format:
+  html: default
+  revealjs:
+    output-file: kolmogorov-complexity-slides.html
+  pdf:
+    output-file: kolmogorov-complexity-handout.pdf
+  docx:
+    output-file: kolmogorov-complexity.docx
+---
+
+{{< include latex-macros/macros.qmd >}}
+
+Shannon entropy measures the information in a random source:
+how many binary digits, on average, its outcomes need.
+Kolmogorov complexity measures the information in one string:
+the length of the shortest program that prints it.
+This page defines Kolmogorov complexity,
+shows that most strings cannot be compressed and that no program computes it,
+and shows that its expected value per symbol approaches the entropy.
+It builds on the
+[entropy](https://morrison-lab.github.io/ids/entropy.html) and
+[source coding](https://morrison-lab.github.io/ids/source-coding.html) pages
+in *Information Theory for Data Science*.
+
+## Shortest descriptions {#sec-kolmogorov-definition}
+
+<!-- No slidebreak here: the heading shares its slide with the def-kolmogorov-complexity div. -->
+
+{{< include cds/_subfiles/_def-kolmogorov-complexity.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-kolmogorov-invariance.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_rem-kolmogorov-fixed-computer.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-kolmogorov-upper-bound.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_exm-kolmogorov-simple-strings.qmd >}}
+
+## Incompressible strings {#sec-incompressible-strings}
+
+<!-- No slidebreak here: the heading shares its slide with the thm-incompressible-strings div. -->
+
+{{< include cds/_subfiles/_thm-incompressible-strings.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_rem-incompressible-random.qmd >}}
+
+## Kolmogorov complexity is uncomputable {#sec-kolmogorov-uncomputable}
+
+<!-- No slidebreak here: the heading shares its slide with the thm-kolmogorov-uncomputable div. -->
+
+{{< include cds/_subfiles/_thm-kolmogorov-uncomputable.qmd >}}
+
+## Kolmogorov complexity and entropy {#sec-kolmogorov-entropy}
+
+<!-- No slidebreak here: the heading shares its slide with the thm-kolmogorov-entropy div. -->
+
+{{< include cds/_subfiles/_thm-kolmogorov-entropy.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_rem-kolmogorov-vs-entropy.qmd >}}
+
+## References {.unnumbered}
+
+::: {#refs}
+:::
