@@ -3,12 +3,13 @@
 
 Let $X_1, X_2, \ldots$ be independent copies of a random variable $X$
 that takes values in a finite set $\mathcal{X}$,
-each value written as a fixed-length binary string,
+each value written as a different binary string of one fixed length,
 and let $H_2(X)$ be the
 [entropy](https://morrison-lab.github.io/pds/expectation.html#def-entropy)
 of $X$ with base-2 logarithms.
 Write $X^n = (X_1, \ldots, X_n)$.
-There is a constant $c$ such that, for every $n \ge 1$,
+There is a constant $c$, which depends on $\mathcal{X}$ and $U$ but not on $n$,
+such that, for every $n \ge 1$,
 
 $$
 H_2(X)

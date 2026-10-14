@@ -12,7 +12,9 @@ In particular, at least one string of length $n$ has $K(x \mid n) \ge n$.
 There are $2^j$ binary strings of length $j$,
 so the number of programs of length less than $n - k$ is
 
-$$\sum_{j=0}^{n-k-1} 2^j = 2^{n-k} - 1.$$
+$$\sum_{j=0}^{n-k-1} 2^j = 2^{n-k} - 1,$$
+
+where the sum is empty, and equal to $0$, when $k = n$.
 
 Given $n$, each program outputs at most one string,
 so at most $2^{n-k} - 1$ strings $x$ have a program shorter than $n - k$.

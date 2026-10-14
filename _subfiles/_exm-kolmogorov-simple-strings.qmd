@@ -1,18 +1,18 @@
 ::: {#exm-kolmogorov-simple-strings}
 #### Simple strings
 
-- The string of $n$ zeros has $K(x \mid n) \le c$ for a constant $c$,
+- For $n \ge 1$, the string $x$ of $n$ zeros has $K(x \mid n) \le c$ for a constant $c$,
   since the program "print $n$ zeros" does not grow with $n$.
   Without $n$ given, the program must also describe $n$,
   and the proof of @thm-kolmogorov-upper-bound gives
   $K(x) \le 2 \log_2 n + c'$.
 
-- The string $0101\ldots01$ of length $n$, for even $n$,
+- The string $x = 0101\ldots01$ of length $n$, for even $n \ge 2$,
   also has $K(x \mid n) \le c$,
   since the program "print $01$ until $n$ digits are printed" does not grow with $n$.
   Half its digits are ones, as expected of $n$ fair coin flips.
 
-- The first $n$ binary digits of $\pi$ also have $K(x \mid n) \le c$:
+- The string $x$ of the first $n$ binary digits of $\pi$ also has $K(x \mid n) \le c$:
   a fixed program computes as many digits of $\pi$ as asked.
   The digits show no obvious pattern,
   yet they are as compressible as a string of zeros.

@@ -7,7 +7,11 @@ defined with universal computers $U$ and $A$.
 There is a constant $c_A$, which depends on $U$ and $A$ but not on $x$,
 such that
 
-$$K_U(x) \le K_A(x) + c_A \quad \text{for every binary string } x.$$
+$$K_U(x) \le K_A(x) + c_A
+\quad \text{and} \quad
+K_U(x \mid n) \le K_A(x \mid n) + c_A$$
+
+for every binary string $x$ and every integer $n$.
 
 :::
 
@@ -18,6 +22,8 @@ $U$ outputs whatever $A$ outputs on $p$.
 So if $p$ is a shortest program for $x$ on $A$,
 then $s_A$ followed by $p$ is a program for $x$ on $U$, and
 $K_U(x) \le \abs{s_A} + \abs{p} = K_A(x) + \abs{s_A}$.
+The same program $s_A$ also passes $n$ on to $A$,
+which gives the conditional bound in the same way.
 Take $c_A = \abs{s_A}$.
 @cover2006elements [section 14.2] give this argument in full.
 
