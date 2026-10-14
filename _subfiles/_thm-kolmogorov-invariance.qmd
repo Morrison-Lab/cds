@@ -1,0 +1,24 @@
+:::{#thm-kolmogorov-invariance}
+#### The choice of computer changes $K$ by at most a constant
+
+Let $K_U$ and $K_A$ be the
+[Kolmogorov complexities](#def-kolmogorov-complexity)
+defined with universal computers $U$ and $A$.
+There is a constant $c_A$, which depends on $U$ and $A$ but not on $x$,
+such that
+
+$$K_U(x) \le K_A(x) + c_A \quad \text{for every binary string } x.$$
+
+:::
+
+::: {.proof}
+Because $U$ is universal, some program $s_A$ makes $U$ simulate $A$:
+given $s_A$ followed by a program $p$ for $A$,
+$U$ outputs whatever $A$ outputs on $p$.
+So if $p$ is a shortest program for $x$ on $A$,
+then $s_A$ followed by $p$ is a program for $x$ on $U$, and
+$K_U(x) \le \abs{s_A} + \abs{p} = K_A(x) + \abs{s_A}$.
+Take $c_A = \abs{s_A}$.
+@cover2006elements [section 14.2] give this argument in full.
+
+:::

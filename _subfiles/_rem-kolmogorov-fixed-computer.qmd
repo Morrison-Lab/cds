@@ -1,0 +1,12 @@
+::: {#rem-kolmogorov-fixed-computer}
+#### Why the choice of computer hardly matters
+
+Applying @thm-kolmogorov-invariance with the roles of $U$ and $A$ swapped
+gives a constant $c'_A$ with $K_A(x) \le K_U(x) + c'_A$.
+Together, $\abs{K_U(x) - K_A(x)} \le \max(c_A, c'_A)$ for every $x$.
+The constant can be large, so the complexity of one short string means little,
+but statements about how $K(x)$ grows with the length of $x$
+do not depend on the computer.
+From here on, $U$ is fixed and dropped from the notation.
+
+:::

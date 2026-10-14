@@ -40,6 +40,9 @@ website:
         menu:
           - p-and-np.qmd
           - reductions.qmd
+      - text: "Compression"
+        menu:
+          - kolmogorov-complexity.qmd
     right:
       - icon: github
         href: https://github.com/Morrison-Lab/cds
@@ -58,6 +61,9 @@ website:
         contents:
           - p-and-np.qmd
           - reductions.qmd
+      - section: "Compression"
+        contents:
+          - kolmogorov-complexity.qmd
 
 callouty-theorem:
   thm:

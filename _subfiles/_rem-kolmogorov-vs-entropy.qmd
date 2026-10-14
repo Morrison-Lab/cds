@@ -1,0 +1,17 @@
+::: {#rem-kolmogorov-vs-entropy}
+#### Entropy describes a distribution; Kolmogorov complexity describes a string
+
+Entropy is the expected
+[surprisal](https://morrison-lab.github.io/ids/entropy.html#def-surprisal)
+of a random variable, so it is a property of a distribution
+and says nothing about any one outcome.
+Kolmogorov complexity is a property of one string and needs no distribution.
+@thm-kolmogorov-entropy says that the two agree on average,
+per symbol, for long independent sequences.
+For a single string they can disagree:
+the string $0101\ldots01$ in @exm-kolmogorov-simple-strings
+has as many ones as zeros,
+like a typical outcome of fair coin flips, whose entropy is 1 bit per flip,
+but its Kolmogorov complexity per digit, $K(x \mid n)/n \le c/n$, tends to 0.
+
+:::
