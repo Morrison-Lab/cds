@@ -3,8 +3,9 @@
 
 Let $K_U$ and $K_A$ be the
 [Kolmogorov complexities](#def-kolmogorov-complexity)
+and [conditional Kolmogorov complexities](#def-conditional-kolmogorov-complexity)
 defined with universal computers $U$ and $A$.
-There is a constant $c_A$, which depends on $U$ and $A$ but not on $x$,
+There is a constant $c_A$, which depends on $U$ and $A$ but not on $x$ or $n$,
 such that
 
 $$K_U(x) \le K_A(x) + c_A

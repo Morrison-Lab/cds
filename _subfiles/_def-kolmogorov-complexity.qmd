@@ -15,14 +15,6 @@ the length of a shortest program that outputs $x$:
 $$K(x) \eqdef \min \{ \abs{p} : U(p) = x \},$$
 
 where $\abs{p}$ is the number of digits in $p$.
-For the **conditional Kolmogorov complexity** of $x$ given an integer $n$,
-$U$ also receives $n$ as an input, and outputs $U(p, n)$ if it halts.
-Assume that, for each fixed $n$,
-no program on which $U$ halts is a proper prefix of another.
-Then
-
-$$K(x \mid n) \eqdef \min \{ \abs{p} : U(p, n) = x \}.$$
-
 This is the definition of @cover2006elements [section 14.2].
 
 :::
