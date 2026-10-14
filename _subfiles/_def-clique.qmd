@@ -1,0 +1,9 @@
+:::{#def-clique}
+#### The clique problem CLIQUE
+
+A *clique* in a graph is a set of vertices every two of which are joined by an edge.
+The decision problem **CLIQUE** asks:
+given a graph $G$ and an integer $k \ge 0$,
+does $G$ have a clique of $k$ vertices?
+
+:::

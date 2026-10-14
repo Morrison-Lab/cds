@@ -1,0 +1,16 @@
+:::{#thm-np-complete-by-reduction}
+#### New NP-complete problems from old
+
+If $L$ is NP-complete (@def-np-complete), $L \le_p L'$ (@def-reduction),
+and $L'$ is in [NP](p-and-np.qmd#def-class-np), then $L'$ is NP-complete.
+
+:::
+
+::: {.proof}
+
+$L'$ is in NP by assumption.
+For any $L_0$ in NP, $L_0 \le_p L$ because $L$ is NP-hard,
+so $L_0 \le_p L'$ by @thm-reduction-transitive.
+So $L'$ is NP-hard, and hence NP-complete.
+
+:::

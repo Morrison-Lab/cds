@@ -1,0 +1,9 @@
+:::{#def-sat}
+#### The satisfiability problem SAT
+
+The decision problem **SAT** asks: given a Boolean formula
+built from variables with AND, OR and NOT,
+is there an assignment of true and false to its variables
+that makes the formula true?
+
+:::

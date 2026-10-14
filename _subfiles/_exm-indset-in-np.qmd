@@ -1,0 +1,17 @@
+:::{#exm-indset-in-np}
+#### Independent set is in NP
+
+For an input $x$ to [INDSET](#def-indset),
+a certificate is the independent set itself,
+written as $m$ binary digits that mark which vertices it holds.
+Since $m$ is fixed by the length of the adjacency matrix in $x$,
+the certificate's length depends only on $|x|$, as @def-class-np requires.
+The verifier checks that $k$ digits are $1$
+and that no two marked vertices are adjacent.
+That takes $O(m^2)$ lookups in the adjacency matrix,
+which is polynomial in $|x|$,
+so INDSET is in NP (@def-class-np).
+No polynomial-time algorithm that decides INDSET is known.
+@arora2009computational [section 2.1] use the same example.
+
+:::

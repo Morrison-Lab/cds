@@ -1,0 +1,78 @@
+---
+title: "P and NP"
+format:
+  html: default
+  revealjs:
+    output-file: p-and-np-slides.html
+  pdf:
+    output-file: p-and-np-handout.pdf
+  docx:
+    output-file: p-and-np.docx
+---
+
+{{< include latex-macros/macros.qmd >}}
+
+Some problems have fast algorithms; for others, the best known algorithms
+take time that grows exponentially with the size of the input.
+This page defines the class P of problems with fast algorithms,
+and the class NP of problems whose yes answers can be checked fast,
+measuring speed with [asymptotic notation](asymptotic-notation.qmd).
+
+## Decision problems and running time {#sec-decision-problems}
+
+<!-- No slidebreak here: the heading shares its slide with the def-decision-problem div. -->
+
+{{< include cds/_subfiles/_def-decision-problem.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_def-running-time.qmd >}}
+
+## The class P {#sec-class-p}
+
+<!-- No slidebreak here: the heading shares its slide with the def-class-p div. -->
+
+{{< include cds/_subfiles/_def-class-p.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_rem-algorithm-model.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_def-path.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_exm-path-in-p.qmd >}}
+
+## The class NP {#sec-class-np}
+
+<!-- No slidebreak here: the heading shares its slide with the def-class-np div. -->
+
+{{< include cds/_subfiles/_def-class-np.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_rem-np-meaning.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_def-indset.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_exm-indset-in-np.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-p-subset-np.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_rem-p-vs-np.qmd >}}
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

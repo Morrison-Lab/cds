@@ -1,0 +1,18 @@
+:::{#thm-reduction-transitive}
+#### Reductions compose
+
+If $L \le_p L'$ and $L' \le_p L''$ (@def-reduction), then $L \le_p L''$.
+
+:::
+
+::: {.proof}
+
+Let $f$ reduce $L$ to $L'$ and $g$ reduce $L'$ to $L''$.
+For every $x$, $x \in L$ exactly when $f(x) \in L'$,
+which is exactly when $g(f(x)) \in L''$.
+Computing $f(x)$ and then $g$ of the result takes polynomial time,
+by the same count as in the proof of @thm-reduction-preserves-p,
+with the algorithm for $g$ in place of the algorithm for $L'$.
+So $x \mapsto g(f(x))$ reduces $L$ to $L''$.
+
+:::

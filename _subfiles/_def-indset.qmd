@@ -1,0 +1,11 @@
+:::{#def-indset}
+#### The independent set problem INDSET
+
+An *independent set* in a graph is a set of vertices
+no two of which are joined by an edge.
+The decision problem **INDSET** asks:
+given a graph $G$ with $m$ vertices, stored as its adjacency matrix,
+and an integer $k \ge 0$,
+does $G$ have an independent set of $k$ vertices?
+
+:::

@@ -1,0 +1,12 @@
+::: {#rem-cook-levin-source}
+#### Where NP-completeness comes from
+
+Stephen Cook and Leonid Levin proved @thm-cook-levin independently in the early 1970s;
+@arora2009computational [section 2.3] give a proof.
+Once one problem is known to be NP-complete,
+@thm-np-complete-by-reduction gives others,
+one reduction at a time.
+@arora2009computational [section 2.4] prove @thm-indset-np-complete this way,
+reducing a version of SAT to INDSET.
+
+:::

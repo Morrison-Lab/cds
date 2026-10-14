@@ -27,14 +27,19 @@ website:
   repo-url: https://github.com/Morrison-Lab/cds
   repo-actions: [edit, issue, source]
   navbar:
-    # The `left` entries below mirror the sidebar's `contents` one-for-one
+    # The left-hand menus below mirror the sidebar's `contents` one-for-one
     # (same groups, same names, same order, same pages): edit the two
-    # together. With one page so far there are no groups; add menus, as pds
-    # does, once a second topic gives a group a sibling. The site title
-    # (which links home), search, and the GitHub link round out the navbar.
+    # together. The site title (which links home), search, and the GitHub
+    # link round out the navbar.
     search: true
     left:
-      - asymptotic-notation.qmd
+      - text: "Measuring cost"
+        menu:
+          - asymptotic-notation.qmd
+      - text: "Hardness"
+        menu:
+          - p-and-np.qmd
+          - reductions.qmd
     right:
       - icon: github
         href: https://github.com/Morrison-Lab/cds
@@ -46,7 +51,13 @@ website:
     style: docked
     search: false
     contents:
-      - asymptotic-notation.qmd
+      - section: "Measuring cost"
+        contents:
+          - asymptotic-notation.qmd
+      - section: "Hardness"
+        contents:
+          - p-and-np.qmd
+          - reductions.qmd
 
 callouty-theorem:
   thm:

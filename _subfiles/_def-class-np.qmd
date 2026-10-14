@@ -1,0 +1,19 @@
+:::{#def-class-np}
+#### The class NP
+
+A [decision problem](#def-decision-problem) $L$ is in **NP**
+if there are a polynomial $q$ and an algorithm $V$, the *verifier*,
+which takes two binary strings $x$ and $u$ as input
+and runs in time polynomial in $|x|$,
+such that for every $x \in \{0, 1\}^*$,
+
+$$
+x \in L
+\quad \text{if and only if} \quad
+V(x, u) = 1 \text{ for some } u \in \{0, 1\}^{q(|x|)}.
+$$
+
+A string $u$ with $V(x, u) = 1$ is a *certificate* for $x$
+[@arora2009computational, section 2.1].
+
+:::

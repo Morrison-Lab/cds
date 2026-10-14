@@ -1,0 +1,8 @@
+::: {#rem-np-meaning}
+#### NP means checkable, not solvable
+
+For a problem in NP (@def-class-np),
+a yes answer always has a short proof that can be checked quickly,
+though nothing says the proof is easy to find.
+
+:::

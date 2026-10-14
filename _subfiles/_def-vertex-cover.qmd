@@ -1,0 +1,10 @@
+:::{#def-vertex-cover}
+#### The vertex cover problem VERTEX-COVER
+
+A *vertex cover* of a graph is a set of vertices
+that contains at least one end of every edge.
+The decision problem **VERTEX-COVER** asks:
+given a graph $G$ with $m$ vertices and an integer $k \ge 0$,
+does $G$ have a vertex cover of at most $k$ vertices?
+
+:::

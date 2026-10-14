@@ -1,0 +1,11 @@
+::: {#exr-indset-to-vertex-cover}
+#### From independent sets to vertex covers
+
+1. Show that a set $S$ of vertices is independent
+   if and only if the set $\bar S$ of the vertices not in $S$
+   is a [vertex cover](#def-vertex-cover).
+
+2. Use part 1 to give a polynomial-time reduction (@def-reduction)
+   from INDSET to VERTEX-COVER.
+
+:::

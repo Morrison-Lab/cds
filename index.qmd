@@ -24,12 +24,16 @@ The pages written so far are:
 
 - [Asymptotic notation](asymptotic-notation.qmd):
   big-O, big-Omega and big-Theta, and what it means for a computation to cost $O(D)$
+- [P and NP](p-and-np.qmd):
+  decision problems, polynomial running time, and the classes P and NP
+- [Reductions and NP-completeness](reductions.qmd):
+  polynomial-time reductions, NP-complete problems,
+  and why sparse regression is computationally hard
 
 The planned topics still to come are:
 
 - models of computation: Turing machines and computability
-- time and space complexity, and the classes P and NP
-- reductions and NP-completeness
+- space complexity
 - randomized computation
 - communication and information complexity
 

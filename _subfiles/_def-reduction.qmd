@@ -1,0 +1,14 @@
+:::{#def-reduction}
+#### Polynomial-time reduction
+
+A [decision problem](p-and-np.qmd#def-decision-problem) $L$
+**reduces in polynomial time** to a decision problem $L'$, written $L \le_p L'$,
+if there is a function $f \colon \{0, 1\}^* \to \{0, 1\}^*$,
+computable in [polynomial time](p-and-np.qmd#def-running-time),
+such that for every $x \in \{0, 1\}^*$,
+
+$$x \in L \quad \text{if and only if} \quad f(x) \in L'$$
+
+[@arora2009computational, section 2.2].
+
+:::

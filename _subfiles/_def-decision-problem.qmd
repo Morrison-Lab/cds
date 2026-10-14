@@ -1,0 +1,14 @@
+:::{#def-decision-problem}
+#### Decision problem
+
+A **decision problem** asks a yes-or-no question about an input.
+Write each input as a binary string $x \in \{0, 1\}^*$,
+the set of finite strings of binary digits,
+and write $|x|$ for its length.
+The decision problem is then the set $L \subseteq \{0, 1\}^*$
+of inputs whose answer is yes,
+and an algorithm **decides** $L$ if,
+on every input $x$, it halts and outputs $1$ if $x \in L$ and $0$ if $x \notin L$.
+@arora2009computational [chapter 1] call such a set $L$ a *language*.
+
+:::

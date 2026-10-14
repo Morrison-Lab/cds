@@ -1,0 +1,12 @@
+::: {#rem-p-vs-np}
+#### The P versus NP question
+
+Whether $\mathrm{P} = \mathrm{NP}$ is open:
+no one has shown that some problem in NP lies outside P,
+or found polynomial-time algorithms for every problem in NP
+[@arora2009computational, section 2.7].
+Most researchers expect the classes to differ,
+which would mean that, for some problems,
+checking a proposed answer is much easier than finding one.
+
+:::

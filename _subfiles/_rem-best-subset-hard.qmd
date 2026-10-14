@@ -1,0 +1,21 @@
+::: {#rem-best-subset-hard}
+#### Sparse regression is NP-hard
+
+Best-subset selection looks for the regression
+with the fewest nonzero coefficients that fits the data to a given tolerance.
+Its decision version asks:
+given a matrix $\mX$, a vector $\vy$, a tolerance $\epsilon$ and an integer $k$,
+is there a vector $\vb$ with at most $k$ nonzero entries
+and $\|\mX \vb - \vy\|_2 \le \epsilon$?
+@natarajan1995sparse showed, by a reduction from an NP-complete problem,
+that this decision problem is NP-hard (@def-np-complete).
+An algorithm that finds a sparsest $\vb$ would decide it,
+by checking whether that $\vb$ has at most $k$ nonzero entries.
+If such an algorithm ran in polynomial time,
+@thm-np-complete-in-p would put every problem in NP into P,
+and since [P is contained in NP](p-and-np.qmd#thm-p-subset-np),
+P would equal NP.
+That is one reason practical methods use greedy forward selection
+or replace the count of nonzero coefficients with a convex penalty, as the lasso does.
+
+:::

@@ -1,0 +1,7 @@
+:::{#def-complement-graph}
+#### Complement of a graph
+
+The **complement** $\bar G$ of a graph $G$ has the same vertices as $G$,
+and joins two distinct vertices exactly when $G$ does not.
+
+:::
