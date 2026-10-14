@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 11:03:27 (PDT)
+Last modified: 2026-10-14 11:42:40 (PDT)
 
 Some problems have fast algorithms; for others, the best known algorithms take time that grows exponentially with the size of the input. This page defines the class P of problems with fast algorithms, and the class NP of problems whose yes answers can be checked fast, measuring speed with [asymptotic notation](asymptotic-notation.llms.md).
 
@@ -56,7 +56,7 @@ Some problems have fast algorithms; for others, the best known algorithms take t
 
 > **NOTE:**
 >
-> **Example 2 (Independent set is in NP)** For an input \\x\\ to [INDSET](#def-indset), a certificate is the independent set itself, written as \\m\\ binary digits that mark which vertices it holds. Since \\m\\ is fixed by the length of the adjacency matrix in \\x\\, the certificate’s length depends only on \\\|x\|\\, as [Definition 5](#def-class-np) requires. The verifier checks that \\k\\ digits are \\1\\ and that no two marked vertices are adjacent. That takes \\O(m^2)\\ lookups in the adjacency matrix, which is polynomial in \\\|x\|\\, so INDSET is in NP ([Definition 5](#def-class-np)). No polynomial-time algorithm that decides INDSET is known. Arora and Barak ([2009, sec. 2.1](#ref-arora2009computational)) use the same example.
+> **Example 2 (Independent set is in NP)** Let \\x\\ be an input to [INDSET](#def-indset), with a graph of \\m\\ vertices. Its adjacency matrix has \\m^2 \ge m\\ entries, so \\m \le \|x\|\\. Take \\q(n) = n\\ in [Definition 5](#def-class-np), so a certificate \\u\\ has \\\|x\|\\ binary digits. Its first \\m\\ digits mark the vertices of a proposed independent set, and the verifier ignores the rest. The verifier checks that \\k\\ of those \\m\\ digits are \\1\\ and that no two marked vertices are adjacent. That takes \\O(m^2)\\ lookups in the adjacency matrix, which is polynomial in \\\|x\|\\. \\G\\ has an independent set of \\k\\ vertices exactly when some such \\u\\ passes, so INDSET is in NP ([Definition 5](#def-class-np)). No polynomial-time algorithm that decides INDSET is known. Arora and Barak ([2009, sec. 2.1](#ref-arora2009computational)) use the same example.
 
 > **NOTE:**
 >

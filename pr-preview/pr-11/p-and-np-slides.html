@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-14 11:03:27 (PDT)</p>
+  <p class="date">Last modified: 2026-10-14 11:42:40 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -344,7 +344,7 @@ V(x, u) = 1 \text{ for some } u \in \{0, 1\}^{q(|x|)}.
 <section class="slide level2">
 
 <div id="exm-indset-in-np" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2 (Independent set is in NP)</strong></span> For an input <span class="math inline">\(x\)</span> to <a href="#/def-indset">INDSET</a>, a certificate is the independent set itself, written as <span class="math inline">\(m\)</span> binary digits that mark which vertices it holds. Since <span class="math inline">\(m\)</span> is fixed by the length of the adjacency matrix in <span class="math inline">\(x\)</span>, the certificate’s length depends only on <span class="math inline">\(|x|\)</span>, as <a href="#/def-class-np" class="quarto-xref">Definition&nbsp;5</a> requires. The verifier checks that <span class="math inline">\(k\)</span> digits are <span class="math inline">\(1\)</span> and that no two marked vertices are adjacent. That takes <span class="math inline">\(O(m^2)\)</span> lookups in the adjacency matrix, which is polynomial in <span class="math inline">\(|x|\)</span>, so INDSET is in NP (<a href="#/def-class-np" class="quarto-xref">Definition&nbsp;5</a>). No polynomial-time algorithm that decides INDSET is known. <span class="citation" data-cites="arora2009computational">Arora and Barak (<a href="#/references" role="doc-biblioref" onclick="">2009, sec. 2.1</a>)</span> use the same example.</p>
+<p><span class="theorem-title"><strong>Example 2 (Independent set is in NP)</strong></span> Let <span class="math inline">\(x\)</span> be an input to <a href="#/def-indset">INDSET</a>, with a graph of <span class="math inline">\(m\)</span> vertices. Its adjacency matrix has <span class="math inline">\(m^2 \ge m\)</span> entries, so <span class="math inline">\(m \le |x|\)</span>. Take <span class="math inline">\(q(n) = n\)</span> in <a href="#/def-class-np" class="quarto-xref">Definition&nbsp;5</a>, so a certificate <span class="math inline">\(u\)</span> has <span class="math inline">\(|x|\)</span> binary digits. Its first <span class="math inline">\(m\)</span> digits mark the vertices of a proposed independent set, and the verifier ignores the rest. The verifier checks that <span class="math inline">\(k\)</span> of those <span class="math inline">\(m\)</span> digits are <span class="math inline">\(1\)</span> and that no two marked vertices are adjacent. That takes <span class="math inline">\(O(m^2)\)</span> lookups in the adjacency matrix, which is polynomial in <span class="math inline">\(|x|\)</span>. <span class="math inline">\(G\)</span> has an independent set of <span class="math inline">\(k\)</span> vertices exactly when some such <span class="math inline">\(u\)</span> passes, so INDSET is in NP (<a href="#/def-class-np" class="quarto-xref">Definition&nbsp;5</a>). No polynomial-time algorithm that decides INDSET is known. <span class="citation" data-cites="arora2009computational">Arora and Barak (<a href="#/references" role="doc-biblioref" onclick="">2009, sec. 2.1</a>)</span> use the same example.</p>
 </div>
 </section>
 <section class="slide level2">
