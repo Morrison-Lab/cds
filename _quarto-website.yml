@@ -174,7 +174,7 @@ format:
     prefer-html: true
   revealjs:
     output-file: "{stem}-slides.html"
-    search: false # decks duplicate the HTML pages, so the search indexes only the HTML format
+    search: false # decks duplicate the HTML pages; without this key search.json lists the *-slides.html decks (checked with Quarto 1.10.19), so the site search would index more than the HTML format
     theme: [simple, styles-reveal.scss]
     include-in-header: qwt-reveal-toggle.html
     slide-number: true
