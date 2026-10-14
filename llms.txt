@@ -4,5 +4,6 @@
 
 ## Pages
 
-- [Computational Complexity for Data Science](https://morrison-lab.github.io/cds/index.llms.md)
+- [Kolmogorov complexity](https://morrison-lab.github.io/cds/kolmogorov-complexity.llms.md)
 - [Asymptotic notation](https://morrison-lab.github.io/cds/asymptotic-notation.llms.md)
+- [Computational Complexity for Data Science](https://morrison-lab.github.io/cds/index.llms.md)

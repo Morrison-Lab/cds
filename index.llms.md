@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:53:58 (PDT)
+Last modified: 2026-10-14 11:35:33 (PDT)
 
 ## Welcome
 
@@ -13,6 +13,7 @@ Computational complexity asks how much time, memory or randomness a problem need
 These notes collect the computational complexity that data science courses use. They are new. The pages written so far are:
 
 - [Asymptotic notation](asymptotic-notation.llms.md): big-O, big-Omega and big-Theta, and what it means for a computation to cost \\O(D)\\
+- [Kolmogorov complexity](kolmogorov-complexity.llms.md): the length of the shortest program that prints a string, why most strings are incompressible and no program computes it, and how its average per symbol approaches Shannon entropy
 
 The planned topics still to come are:
 
