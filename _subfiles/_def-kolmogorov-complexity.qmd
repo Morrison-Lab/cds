@@ -1,0 +1,22 @@
+:::{#def-kolmogorov-complexity}
+#### Kolmogorov complexity
+
+Fix a universal computer $U$:
+a Turing machine, or an interpreter for a programming language,
+that reads a program $p$, a finite string of binary digits,
+and either runs forever or halts and outputs a binary string $U(p)$.
+Assume no program on which $U$ halts is a proper prefix of another,
+as happens when $U$ reads its program one digit at a time
+and must itself decide where the program ends.
+
+The **Kolmogorov complexity** of a binary string $x$ is
+the length of a shortest program that outputs $x$:
+
+$$K(x) \eqdef \min \{ \abs{p} : U(p) = x \},$$
+
+where $\abs{p}$ is the number of digits in $p$.
+The **conditional Kolmogorov complexity** $K(x \mid n)$ is defined the same way,
+except that $U$ is also given the integer $n$ as an input.
+This is the definition of @cover2006elements [section 14.2].
+
+:::
