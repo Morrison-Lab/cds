@@ -1,0 +1,10 @@
+# Computational Complexity for Data Science
+
+> Computational complexity for data science courses
+
+## Pages
+
+- [Reductions and NP-completeness](https://morrison-lab.github.io/cds/reductions.llms.md)
+- [Computational Complexity for Data Science](https://morrison-lab.github.io/cds/index.llms.md)
+- [Asymptotic notation](https://morrison-lab.github.io/cds/asymptotic-notation.llms.md)
+- [P and NP](https://morrison-lab.github.io/cds/p-and-np.llms.md)
