@@ -1,0 +1,6 @@
+:::{#thm-cook-levin}
+#### Cook--Levin theorem
+
+[SAT](#def-sat) is NP-complete (@def-np-complete).
+
+:::

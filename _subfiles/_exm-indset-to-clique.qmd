@@ -1,0 +1,26 @@
+:::{#exm-indset-to-clique}
+#### From independent sets to cliques
+
+A set $S$ of vertices is independent in $G$
+exactly when no two vertices of $S$ are joined in $G$,
+which is exactly when every two vertices of $S$ are joined
+in the [complement](#def-complement-graph) $\bar G$,
+that is, when $S$ is a [clique](#def-clique) in $\bar G$.
+So the function $f(G, k) = (\bar G, k)$ satisfies
+
+$$
+(G, k) \in \text{INDSET}
+\quad \text{if and only if} \quad
+(\bar G, k) \in \text{CLIQUE}.
+$$
+
+With $m$ vertices, computing $\bar G$
+flips the $m(m - 1)$ off-diagonal entries of the adjacency matrix,
+which takes $O(m^2)$ steps.
+So INDSET $\le_p$ CLIQUE (@def-reduction).
+CLIQUE is in NP, since a clique is its own certificate, as in
+[the INDSET example](p-and-np.qmd#exm-indset-in-np).
+INDSET is NP-complete (@thm-indset-np-complete),
+so CLIQUE is NP-complete too, by @thm-np-complete-by-reduction.
+
+:::

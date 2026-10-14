@@ -1,0 +1,20 @@
+:::{#exm-indset-in-np}
+#### Independent set is in NP
+
+Let $x$ be an input to [INDSET](#def-indset),
+with a graph of $m$ vertices.
+Its adjacency matrix has $m^2 \ge m$ entries, so $m \le |x|$.
+Take $q(n) = n$ in @def-class-np,
+so a certificate $u$ has $|x|$ binary digits.
+Its first $m$ digits mark the vertices of a proposed independent set,
+and the verifier ignores the rest.
+The verifier checks that $k$ of those $m$ digits are $1$
+and that no two marked vertices are adjacent.
+That takes $O(m^2)$ lookups in the adjacency matrix,
+which is polynomial in $|x|$.
+$G$ has an independent set of $k$ vertices exactly when some such $u$ passes,
+so INDSET is in NP (@def-class-np).
+No polynomial-time algorithm that decides INDSET is known.
+@arora2009computational [section 2.1] use the same example.
+
+:::

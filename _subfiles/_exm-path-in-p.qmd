@@ -1,0 +1,15 @@
+:::{#exm-path-in-p}
+#### Reachability is in P
+
+Breadth-first search decides [PATH](#def-path).
+It starts at $s$,
+and, for each vertex it reaches, scans that vertex's row of the matrix
+for neighbors not yet reached.
+It handles each vertex at most once and scans each row in $O(m)$ steps,
+so it takes $O(m^2)$ steps in all,
+and it answers yes exactly when it reaches $t$.
+The input has length at least $m^2$,
+so this running time is $O(n)$ in the input length $n$,
+and PATH is in P (@def-class-p).
+
+:::

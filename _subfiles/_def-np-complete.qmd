@@ -1,0 +1,10 @@
+:::{#def-np-complete}
+#### NP-hard and NP-complete
+
+A decision problem $L'$ is **NP-hard**
+if $L \le_p L'$ (@def-reduction)
+for every decision problem $L$ in [NP](p-and-np.qmd#def-class-np).
+It is **NP-complete** if it is NP-hard and also in NP
+[@arora2009computational, section 2.2].
+
+:::

@@ -1,0 +1,16 @@
+:::{#thm-p-subset-np}
+#### P is contained in NP
+
+Every decision problem in P (@def-class-p) is in NP (@def-class-np).
+
+:::
+
+::: {.proof}
+
+Let an algorithm $A$ decide $L$ in polynomial time.
+Take $q(n) = 0$, so the only certificate is the empty string,
+and let the verifier $V(x, u)$ ignore $u$ and return $A(x)$.
+$V$ runs in polynomial time,
+and $V(x, u) = 1$ exactly when $x \in L$.
+
+:::

@@ -27,15 +27,22 @@ website:
   repo-url: https://github.com/Morrison-Lab/cds
   repo-actions: [edit, issue, source]
   navbar:
-    # The `left` entries below mirror the sidebar's `contents` one-for-one
+    # The left-hand menus below mirror the sidebar's `contents` one-for-one
     # (same groups, same names, same order, same pages): edit the two
-    # together. The pages are not grouped yet; add menus, as pds does,
-    # once a group would hold two or more pages. The site title
-    # (which links home), search, and the GitHub link round out the navbar.
+    # together. The site title (which links home), search, and the GitHub
+    # link round out the navbar.
     search: true
     left:
-      - asymptotic-notation.qmd
-      - kolmogorov-complexity.qmd
+      - text: "Measuring cost"
+        menu:
+          - asymptotic-notation.qmd
+      - text: "Hardness"
+        menu:
+          - p-and-np.qmd
+          - reductions.qmd
+      - text: "Compression"
+        menu:
+          - kolmogorov-complexity.qmd
     right:
       - icon: github
         href: https://github.com/Morrison-Lab/cds
@@ -47,8 +54,16 @@ website:
     style: docked
     search: false
     contents:
-      - asymptotic-notation.qmd
-      - kolmogorov-complexity.qmd
+      - section: "Measuring cost"
+        contents:
+          - asymptotic-notation.qmd
+      - section: "Hardness"
+        contents:
+          - p-and-np.qmd
+          - reductions.qmd
+      - section: "Compression"
+        contents:
+          - kolmogorov-complexity.qmd
 
 callouty-theorem:
   thm:

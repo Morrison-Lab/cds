@@ -1,0 +1,15 @@
+:::{#thm-np-complete-in-p}
+#### One NP-hard problem in P puts all of NP in P
+
+If any NP-hard problem (@def-np-complete) is in
+[P](p-and-np.qmd#def-class-p), then every problem in NP is in P.
+
+:::
+
+::: {.proof}
+
+Let $L'$ be NP-hard and in P, and let $L$ be any problem in NP.
+Then $L \le_p L'$ by @def-np-complete,
+so $L$ is in P by @thm-reduction-preserves-p.
+
+:::

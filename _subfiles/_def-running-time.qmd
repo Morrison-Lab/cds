@@ -1,0 +1,11 @@
+:::{#def-running-time}
+#### Running time
+
+Let $T$ be a function from the nonnegative integers to the nonnegative integers.
+An algorithm **runs in time** $T(n)$
+if on every input $x$ it halts within $T(|x|)$ steps.
+It runs in **polynomial time**
+if it runs in time $T(n)$ with $T(n) = O(n^c)$ for some constant $c$,
+where $O$ is [big-O notation](asymptotic-notation.qmd#def-big-o).
+
+:::

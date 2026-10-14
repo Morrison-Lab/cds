@@ -1,0 +1,19 @@
+::: {#sol-indset-to-vertex-cover}
+
+1. $S$ fails to be independent
+   exactly when some edge has both its ends in $S$,
+   which is exactly when some edge has no end in $\bar S$,
+   that is, when $\bar S$ fails to be a vertex cover.
+
+2. Map $(G, k)$ to $(G, m - k)$ when $k \le m$,
+   and to a fixed no-instance, such as a single edge with $k = 0$, when $k > m$.
+   If $G$ has an independent set $S$ of $k$ vertices,
+   then by part 1, $\bar S$ is a vertex cover of $m - k$ vertices.
+   If $G$ has a vertex cover $C$ of at most $m - k$ vertices,
+   then by part 1, $\bar C$ is independent with at least $k$ vertices,
+   and any $k$ of them still form an independent set.
+   So $(G, k) \in \text{INDSET}$ if and only if
+   $(G, m - k) \in \text{VERTEX-COVER}$.
+   The map copies $G$ and computes $m - k$, which takes polynomial time.
+
+:::

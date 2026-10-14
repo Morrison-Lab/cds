@@ -1,0 +1,47 @@
+:::{#thm-reduction-preserves-p}
+#### Reductions carry polynomial-time algorithms back
+
+If $L \le_p L'$ (@def-reduction) and $L'$ is in
+[P](p-and-np.qmd#def-class-p), then $L$ is in P.
+
+:::
+
+::: {.proof}
+
+Let $f$ be the reduction.
+A big-O bound holds from some $n_0$ on,
+and raising its constant to cover the finitely many lengths below $n_0$
+turns it into a bound for every length.
+So there are constants $a, b \ge 1$ and $c, d \ge 0$ such that,
+on inputs of every length $n \ge 0$,
+computing $f$ takes at most $a (n + 1)^{c}$ steps,
+and some algorithm decides $L'$ within $b (n + 1)^{d}$ steps.
+
+On input $x$ of length $n$, compute $f(x)$ and then decide whether $f(x) \in L'$.
+The answer is correct because $x \in L$ exactly when $f(x) \in L'$.
+
+Each step writes at most some fixed number $k$ of output bits,
+so $|f(x)| \le k a (n + 1)^{c}$.
+Since $(n + 1)^{c} \ge 1$,
+
+$$
+\begin{aligned}
+|f(x)| + 1
+&\le k a (n + 1)^{c} + 1 \\
+&\le (k a + 1) (n + 1)^{c}.
+\end{aligned}
+$$
+
+The two stages together take at most
+
+$$
+\begin{aligned}
+a (n + 1)^{c} + b \paren{|f(x)| + 1}^{d}
+&\le a (n + 1)^{c} + b \sb{(k a + 1) (n + 1)^{c}}^{d} \\
+&= a (n + 1)^{c} + b (k a + 1)^{d} (n + 1)^{cd}
+\end{aligned}
+$$
+
+steps, which is $O(n^{\max(c, cd)})$, a polynomial bound.
+
+:::

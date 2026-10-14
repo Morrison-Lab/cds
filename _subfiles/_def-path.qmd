@@ -1,0 +1,9 @@
+:::{#def-path}
+#### The reachability problem PATH
+
+The decision problem **PATH** asks:
+given a graph $G$ with $m$ vertices, stored as its $m \times m$ adjacency matrix,
+and two vertices $s$ and $t$,
+is there a path from $s$ to $t$?
+
+:::

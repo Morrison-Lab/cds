@@ -1,0 +1,8 @@
+:::{#def-class-p}
+#### The class P
+
+**P** is the set of [decision problems](#def-decision-problem)
+that some algorithm decides in [polynomial time](#def-running-time)
+[@arora2009computational, section 1.6].
+
+:::

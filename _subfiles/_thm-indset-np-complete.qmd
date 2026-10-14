@@ -1,0 +1,7 @@
+:::{#thm-indset-np-complete}
+#### Independent set is NP-complete
+
+[INDSET](p-and-np.qmd#def-indset) is NP-complete (@def-np-complete)
+[@arora2009computational, section 2.4].
+
+:::

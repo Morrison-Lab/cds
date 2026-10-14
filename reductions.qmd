@@ -1,0 +1,100 @@
+---
+title: "Reductions and NP-completeness"
+format:
+  html: default
+  revealjs:
+    output-file: reductions-slides.html
+  pdf:
+    output-file: reductions-handout.pdf
+  docx:
+    output-file: reductions.docx
+---
+
+{{< include latex-macros/macros.qmd >}}
+
+A reduction turns every question about one problem
+into a question about another,
+so that a fast algorithm for the second gives one for the first.
+Reductions compare the difficulty of the problems in
+[NP](p-and-np.qmd#def-class-np), and single out the hardest of them.
+
+## Polynomial-time reductions {#sec-reductions}
+
+<!-- No slidebreak here: the heading shares its slide with the def-reduction div. -->
+
+{{< include cds/_subfiles/_def-reduction.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-reduction-preserves-p.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-reduction-transitive.qmd >}}
+
+## NP-completeness {#sec-np-completeness}
+
+<!-- No slidebreak here: the heading shares its slide with the def-np-complete div. -->
+
+{{< include cds/_subfiles/_def-np-complete.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-np-complete-in-p.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-np-complete-by-reduction.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_def-sat.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-cook-levin.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_thm-indset-np-complete.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_rem-cook-levin-source.qmd >}}
+
+## Worked reductions {#sec-worked-reductions}
+
+<!-- No slidebreak here: the heading shares its slide with the def-clique div. -->
+
+{{< include cds/_subfiles/_def-clique.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_def-complement-graph.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_exm-indset-to-clique.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_def-vertex-cover.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_exr-indset-to-vertex-cover.qmd >}}
+
+{{< slidebreak >}}
+
+{{< include cds/_subfiles/_sol-indset-to-vertex-cover.qmd >}}
+
+## Hardness in data science {#sec-hardness-data-science}
+
+<!-- No slidebreak here: the heading shares its slide with the rem-best-subset-hard div. -->
+
+{{< include cds/_subfiles/_rem-best-subset-hard.qmd >}}
+
+## References {.unnumbered}
+
+::: {#refs}
+:::
