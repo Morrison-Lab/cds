@@ -12,11 +12,9 @@ and must itself decide where the program ends.
 The **Kolmogorov complexity** of a binary string $x$ is
 the length of a shortest program that outputs $x$:
 
-$$K(x) \eqdef \min \{ \abs{p} : U(p) = x \},$$
+$$\kolmf{x} \eqdef \min \set{\strlen{p} : U(p) = x},$$
 
-where $\abs{p}$ is the number of digits in $p$.
-The **conditional Kolmogorov complexity** $K(x \mid n)$ is defined the same way,
-except that $U$ is also given the integer $n$ as an input.
+where $\strlen{p}$ is the number of digits in $p$.
 This is the definition of @cover2006elements [section 14.2].
 
 :::

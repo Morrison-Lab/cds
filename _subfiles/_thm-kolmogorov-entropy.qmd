@@ -2,21 +2,22 @@
 #### Expected Kolmogorov complexity per symbol approaches the entropy
 
 Let $X_1, X_2, \ldots$ be independent copies of a random variable $X$
-that takes values in a finite set $\mathcal{X}$,
-each value written as a fixed-length binary string,
-and let $H_2(X)$ be the
+that takes values in a finite set $\srcalph$,
+each value written as a different binary string of one fixed length,
+and let $\entropyf{X}$ be the
 [entropy](https://morrison-lab.github.io/pds/expectation.html#def-entropy)
 of $X$ with base-2 logarithms.
 Write $X^n = (X_1, \ldots, X_n)$.
-There is a constant $c$ such that, for every $n \ge 1$,
+There is a constant $c$, which depends on $\srcalph$ and $U$ but not on $n$,
+such that, for every $n \ge 1$,
 
 $$
-H_2(X)
-\le \frac{1}{n} \Ep\left[K(X^n \mid n)\right]
-\le H_2(X) + \frac{(\abs{\mathcal{X}} - 1) \log_2 n}{n} + \frac{c}{n}.
+\entropyf{X}
+\le \frac{1}{n} \E{\ckolmf{X^n}{n}}
+\le \entropyf{X} + \frac{(\abs{\srcalph} - 1) \log_2 n}{n} + \frac{c}{n}.
 $$
 
-So $\frac{1}{n} \Ep[K(X^n \mid n)] \to H_2(X)$ as $n \to \infty$.
+So $\frac{1}{n} \E{\ckolmf{X^n}{n}} \to \entropyf{X}$ as $n \to \infty$.
 This is Theorem 14.3.1 of @cover2006elements.
 
 :::
@@ -29,23 +30,23 @@ and no halting program is a prefix of another,
 so this is a prefix code for $X^n$, which makes it
 [uniquely decodable](https://morrison-lab.github.io/ids/source-coding.html#def-uniquely-decodable).
 Its [expected length](https://morrison-lab.github.io/ids/source-coding.html#def-expected-length)
-is $\Ep[K(X^n \mid n)]$.
+is $\E{\ckolmf{X^n}{n}}$.
 If $X$ takes only one value with positive probability,
-then $H_2(X) = 0$ and the lower bound holds trivially.
+then $\entropyf{X} = 0$ and the lower bound holds trivially.
 Otherwise, $X^n$ also takes at least two values with positive probability,
 and part 1 of the
 [source coding theorem](https://morrison-lab.github.io/ids/source-coding.html#thm-source-coding)
-gives $\Ep[K(X^n \mid n)] \ge H_2(X^n)$.
+gives $\E{\ckolmf{X^n}{n}} \ge \entropyf{X^n}$.
 Applying the
 [chain rule for entropy](https://morrison-lab.github.io/ids/entropy.html#thm-entropy-chain-rule)
 $n - 1$ times, and using that conditioning on independent variables
-does not change entropy, gives $H_2(X^n) = n H_2(X)$.
+does not change entropy, gives $\entropyf{X^n} = n \entropyf{X}$.
 Dividing by $n$ gives the lower bound.
 
 For the upper bound, @cover2006elements [section 14.3] describe $x^n$ in two parts:
-first how many times each value in $\mathcal{X}$ occurs,
-which takes about $(\abs{\mathcal{X}} - 1) \log_2 n$ digits,
+first how many times each value in $\srcalph$ occurs,
+which takes about $(\abs{\srcalph} - 1) \log_2 n$ digits,
 then which of the strings with those counts $x^n$ is,
-which takes about $n H_2(X)$ digits on average.
+which takes about $n \entropyf{X}$ digits on average.
 
 :::

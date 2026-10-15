@@ -30,6 +30,8 @@ in *Information Theory for Data Science*.
 
 {{< include cds/_subfiles/_def-kolmogorov-complexity.qmd >}}
 
+{{< include cds/_subfiles/_def-conditional-kolmogorov-complexity.qmd >}}
+
 {{< slidebreak >}}
 
 {{< include cds/_subfiles/_thm-kolmogorov-invariance.qmd >}}

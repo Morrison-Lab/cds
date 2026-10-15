@@ -4,13 +4,13 @@
 By @thm-incompressible-strings,
 if $x$ is drawn uniformly from the strings of length $n$,
 for example by $n$ fair coin flips,
-then $\P(K(x \mid n) < n - k) < 2^{n-k} / 2^n = 2^{-k}$.
+then $\Prf{\ckolmf{x}{n} < n - k} < 2^{n-k} / 2^n = 2^{-k}$.
 So a string of $n$ fair coin flips can be compressed by more than $k$ digits
 with probability less than $2^{-k}$.
-A string with $K(x \mid n) \ge n$ has no description shorter than itself.
+A string with $\ckolmf{x}{n} \ge n$ has no description shorter than itself.
 @li2019introduction [chapter 2] call a string random
 when it is incompressible in this sense,
-for a variant of $K$ whose programs need not be prefix-free.
+for a variant of $\kolm$ whose programs need not be prefix-free.
 A proof can pick an incompressible string and show that some property must hold for it,
 or else the string would have a short description.
 @li2019introduction [chapter 6] call this the *incompressibility method*.

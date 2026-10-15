@@ -1,0 +1,15 @@
+:::{#def-conditional-kolmogorov-complexity}
+#### Conditional Kolmogorov complexity
+
+Let the universal computer $U$ of @def-kolmogorov-complexity
+also receive an integer $n$ as an input,
+so that it outputs $U(p, n)$ if it halts on program $p$.
+Assume that, for each fixed $n$,
+no program on which $U$ halts is a proper prefix of another.
+The **conditional Kolmogorov complexity** of a binary string $x$ given $n$ is
+
+$$\ckolmf{x}{n} \eqdef \min \set{\strlen{p} : U(p, n) = x}.$$
+
+@cover2006elements [section 14.2] define it the same way.
+
+:::

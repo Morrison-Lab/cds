@@ -1,31 +1,32 @@
 :::{#thm-kolmogorov-uncomputable}
 #### Kolmogorov complexity cannot be computed
 
-No program takes a binary string $x$ as input and outputs $K(x)$.
+No program takes a binary string $x$ as input and outputs $\kolmf{x}$.
 
 :::
 
 ::: {.proof}
-Suppose a program $Q$ outputs $K(x)$ on input $x$.
+Suppose a program $Q$ halts on every binary string $x$ and outputs $\kolmf{x}$.
 For each integer $m \ge 1$, consider the program $P_m$ that does the following:
 list binary strings in order of length,
-use $Q$ to compute $K(x)$ for each one,
-and output the first $x$ with $K(x) \ge m$.
+and in lexicographic order within each length,
+use $Q$ to compute $\kolmf{x}$ for each one,
+and output the first $x$ with $\kolmf{x} \ge m$.
 Such an $x$ exists, because fewer than $2^m$ programs are shorter than $m$,
-so $P_m$ halts, and its output $x$ has $K(x) \ge m$.
+so $P_m$ halts, and its output $x$ has $\kolmf{x} \ge m$.
 
 The program $P_m$ consists of a fixed part, of some length $c$,
 and a description of $m$ that shows where it ends,
 which the proof of @thm-kolmogorov-upper-bound writes in at most $2 \log_2 m + 4$ digits.
-So the output $x$ of $P_m$ also has $K(x) \le 2 \log_2 m + 4 + c$, and together
+So the output $x$ of $P_m$ also has $\kolmf{x} \le 2 \log_2 m + 4 + c$, and together
 
-$$m \le K(x) \le 2 \log_2 m + 4 + c.$$
+$$m \le \kolmf{x} \le 2 \log_2 m + 4 + c.$$
 
 The left side grows faster than the right,
 so this fails once $m$ is large enough,
 and no such $Q$ exists.
 The argument formalizes the Berry paradox,
 "the smallest positive integer not definable in under sixty letters",
-and @cover2006elements [chapter 14] discuss why $K$ cannot be computed.
+and @cover2006elements [chapter 14] discuss why $\kolm$ cannot be computed.
 
 :::
