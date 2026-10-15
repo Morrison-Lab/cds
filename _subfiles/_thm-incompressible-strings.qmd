@@ -3,8 +3,8 @@
 
 Let $n \ge 1$ and $0 \le k \le n$ be integers.
 Fewer than $2^{n-k}$ of the $2^n$ binary strings of length $n$ satisfy
-$K(x \mid n) < n - k$.
-In particular, at least one string of length $n$ has $K(x \mid n) \ge n$.
+$\ckolmf{x}{n} < n - k$.
+In particular, at least one string of length $n$ has $\ckolmf{x}{n} \ge n$.
 
 :::
 
@@ -19,6 +19,6 @@ where the sum is empty, and equal to $0$, when $k = n$.
 Given $n$, each program outputs at most one string,
 so at most $2^{n-k} - 1$ strings $x$ have a program shorter than $n - k$.
 With $k = 0$, at most $2^n - 1$ of the $2^n$ strings of length $n$
-have $K(x \mid n) < n$, which leaves at least one with $K(x \mid n) \ge n$.
+have $\ckolmf{x}{n} < n$, which leaves at least one with $\ckolmf{x}{n} \ge n$.
 
 :::

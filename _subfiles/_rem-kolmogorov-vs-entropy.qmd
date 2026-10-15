@@ -12,6 +12,6 @@ For a single string they can disagree:
 the string $0101\ldots01$ in @exm-kolmogorov-simple-strings
 has as many ones as zeros,
 like a typical outcome of fair coin flips, whose entropy is 1 bit per flip,
-but its Kolmogorov complexity per digit, $K(x \mid n)/n \le c/n$, tends to 0.
+but its Kolmogorov complexity per digit, $\ckolmf{x}{n}/n \le c/n$, tends to 0.
 
 :::

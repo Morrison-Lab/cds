@@ -8,7 +8,7 @@ Assume that, for each fixed $n$,
 no program on which $U$ halts is a proper prefix of another.
 The **conditional Kolmogorov complexity** of a binary string $x$ given $n$ is
 
-$$K(x \mid n) \eqdef \min \{ \abs{p} : U(p, n) = x \}.$$
+$$\ckolmf{x}{n} \eqdef \min \set{\strlen{p} : U(p, n) = x}.$$
 
 @cover2006elements [section 14.2] define it the same way.
 
