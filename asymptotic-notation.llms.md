@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-24 21:50:07 (PDT)
+Last modified: 2026-10-24 21:55:03 (PDT)
 
 The cost of an algorithm depends on the size \\n\\ of its input. Asymptotic notation compares how two costs grow as \\n\\ grows, ignoring constant factors and small inputs.
 
@@ -50,9 +50,9 @@ The cost of an algorithm depends on the size \\n\\ of its input. Asymptotic nota
 
 > **NOTE:**
 >
-> **Example 2 (Counting the operations in an inner product)** The inner product of two vectors \\\tilde{x}, \tilde{z}\in \mathbb{R}^D\\ is
+> **Example 2 (Counting the operations in an inner product)** The inner product of two vectors \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{x}}\vphantom{x}}, \mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{z}}\vphantom{z}}\in \mathbb{R}^D\\ is
 >
-> \\\tilde{x}^\top \tilde{z}= x_1 z_1 + x_2 z_2 + \cdots + x_D z_D.\\
+> \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{x}}\vphantom{x}}^\top \mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{z}}\vphantom{z}}= x_1 z_1 + x_2 z_2 + \cdots + x_D z_D.\\
 >
 > Computing it takes \\D\\ multiplications, one for each product \\x_d z_d\\, and \\D - 1\\ additions to sum the \\D\\ products: \\2D - 1\\ arithmetic operations in all. Since \\2D - 1 \le 2D\\ for every \\D \ge 1\\, the cost is \\O(D)\\, with \\D\\ in the role of \\n\\, \\c = 2\\ and \\n_0 = 1\\ in [Definition 1](#def-big-o). Since \\2D - 1 \ge D\\ for every \\D \ge 1\\, it is also \\\Omega(D)\\ ([Definition 2](#def-big-omega)), so it is \\\Theta(D)\\ ([Definition 3](#def-big-theta)). When a machine learning text says an inner product “costs \\O(D)\\”, it means this count of operations, up to a constant factor.
 

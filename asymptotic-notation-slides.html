@@ -264,7 +264,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-24 21:50:07 (PDT)</p>
+  <p class="date">Last modified: 2026-10-24 21:55:03 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -320,8 +320,8 @@ f(n)
 <section class="slide level2">
 
 <div id="exm-inner-product-cost" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2 (Counting the operations in an inner product)</strong></span> The inner product of two vectors <span class="math inline">\(\tilde{x}, \tilde{z}\in \mathbb{R}^D\)</span> is</p>
-<p><span class="math display">\[\tilde{x}^\top \tilde{z}= x_1 z_1 + x_2 z_2 + \cdots + x_D z_D.\]</span></p>
+<p><span class="theorem-title"><strong>Example 2 (Counting the operations in an inner product)</strong></span> The inner product of two vectors <span class="math inline">\(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}}, \mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{z}}\vphantom{z}}\in \mathbb{R}^D\)</span> is</p>
+<p><span class="math display">\[\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}}^\top \mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{z}}\vphantom{z}}= x_1 z_1 + x_2 z_2 + \cdots + x_D z_D.\]</span></p>
 <p>Computing it takes <span class="math inline">\(D\)</span> multiplications, one for each product <span class="math inline">\(x_d z_d\)</span>, and <span class="math inline">\(D - 1\)</span> additions to sum the <span class="math inline">\(D\)</span> products: <span class="math inline">\(2D - 1\)</span> arithmetic operations in all. Since <span class="math inline">\(2D - 1 \le 2D\)</span> for every <span class="math inline">\(D \ge 1\)</span>, the cost is <span class="math inline">\(O(D)\)</span>, with <span class="math inline">\(D\)</span> in the role of <span class="math inline">\(n\)</span>, <span class="math inline">\(c = 2\)</span> and <span class="math inline">\(n_0 = 1\)</span> in <a href="#/def-big-o" class="quarto-xref">Definition&nbsp;1</a>. Since <span class="math inline">\(2D - 1 \ge D\)</span> for every <span class="math inline">\(D \ge 1\)</span>, it is also <span class="math inline">\(\Omega(D)\)</span> (<a href="#/def-big-omega" class="quarto-xref">Definition&nbsp;2</a>), so it is <span class="math inline">\(\Theta(D)\)</span> (<a href="#/def-big-theta" class="quarto-xref">Definition&nbsp;3</a>). When a machine learning text says an inner product “costs <span class="math inline">\(O(D)\)</span>”, it means this count of operations, up to a constant factor.</p>
 </div>
 </section>

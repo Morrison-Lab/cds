@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-24 21:50:07 (PDT)
+Last modified: 2026-10-24 21:55:03 (PDT)
 
 A reduction turns every question about one problem into a question about another, so that a fast algorithm for the second gives one for the first. Reductions compare the difficulty of the problems in [NP](p-and-np.llms.md#def-class-np), and single out the hardest of them.
 
@@ -126,7 +126,7 @@ A reduction turns every question about one problem into a question about another
 
 > **NOTE:**
 >
-> *Remark 2* (Sparse regression is NP-hard). Best-subset selection looks for the regression with the fewest nonzero coefficients that fits the data to a given tolerance. Its decision version asks: given a matrix \\\mathbf{X}\\, a vector \\\tilde{y}\\, a tolerance \\\epsilon\\ and an integer \\k\\, is there a vector \\\tilde{\beta}\\ with at most \\k\\ nonzero entries and \\\\\mathbf{X}\tilde{\beta}- \tilde{y}\\\_2 \le \epsilon\\? Natarajan ([1995](#ref-natarajan1995sparse)) showed, by a reduction from an NP-complete problem, that this decision problem is NP-hard ([Definition 2](#def-np-complete)). An algorithm that finds a sparsest \\\tilde{\beta}\\ would decide it, by checking whether that \\\tilde{\beta}\\ has at most \\k\\ nonzero entries. If such an algorithm ran in polynomial time, [Theorem 3](#thm-np-complete-in-p) would put every problem in NP into P, and since [P is contained in NP](p-and-np.llms.md#thm-p-subset-np), P would equal NP. That is one reason practical methods use greedy forward selection or replace the count of nonzero coefficients with a convex penalty, as the lasso does.
+> *Remark 2* (Sparse regression is NP-hard). Best-subset selection looks for the regression with the fewest nonzero coefficients that fits the data to a given tolerance. Its decision version asks: given a matrix \\\mathbf{X}\\, a vector \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{y}}\vphantom{y}}\\, a tolerance \\\epsilon\\ and an integer \\k\\, is there a vector \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\beta}}\vphantom{\beta}}\\ with at most \\k\\ nonzero entries and \\\\\mathbf{X}\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\beta}}\vphantom{\beta}}- \mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{y}}\vphantom{y}}\\\_2 \le \epsilon\\? Natarajan ([1995](#ref-natarajan1995sparse)) showed, by a reduction from an NP-complete problem, that this decision problem is NP-hard ([Definition 2](#def-np-complete)). An algorithm that finds a sparsest \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\beta}}\vphantom{\beta}}\\ would decide it, by checking whether that \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\beta}}\vphantom{\beta}}\\ has at most \\k\\ nonzero entries. If such an algorithm ran in polynomial time, [Theorem 3](#thm-np-complete-in-p) would put every problem in NP into P, and since [P is contained in NP](p-and-np.llms.md#thm-p-subset-np), P would equal NP. That is one reason practical methods use greedy forward selection or replace the count of nonzero coefficients with a convex penalty, as the lasso does.
 
 ## References
 
