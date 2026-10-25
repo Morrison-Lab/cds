@@ -32,9 +32,6 @@ exclude = [
   "https://math.stackexchange.com/.*",
   "https://stats.stackexchange.com/.*",
   "https://www.etymonline.com/.*",
-  # Stanford course pages time out from CI runners; the links work in a browser.
-  "https?://theory.stanford.edu/.*",
-  "https?://infolab.stanford.edu/.*",
 ]
 
 # `cds` is a symlink to the repository root, so include paths read
