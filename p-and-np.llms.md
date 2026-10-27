@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-24 21:55:03 (PDT)
+Last modified: 2026-10-26 23:11:44 (PDT)
 
 Some problems have fast algorithms; for others, the best known algorithms take time that grows exponentially with the size of the input. This page defines the class P of problems with fast algorithms, and the class NP of problems whose yes answers can be checked fast, measuring speed with [asymptotic notation](asymptotic-notation.llms.md).
 
