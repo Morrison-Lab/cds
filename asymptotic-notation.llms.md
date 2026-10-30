@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 18:15:54 (PDT)
+Last modified: 2026-10-30 13:54:17 (PDT)
 
 The cost of an algorithm depends on the size \\n\\ of its input. Asymptotic notation compares how two costs grow as \\n\\ grows, ignoring constant factors and small inputs.
 
@@ -34,11 +34,33 @@ The cost of an algorithm depends on the size \\n\\ of its input. Asymptotic nota
 >
 > *Remark 1* (The equals sign is one-way). \\O(g(n))\\ stands for a set of functions, and \\f(n) = O(g(n))\\ says that \\f\\ belongs to it. So \\n = O(n^2)\\ is true, but \\n^2 = O(n)\\ is false, and the statement cannot be read from right to left. Cormen et al. ([2009, sec. 3.1](#ref-cormen2009introduction)) reads the notation this way.
 
-## 2 Examples
+## 2 Dominance
 
 > **NOTE:**
 >
-> **Example 1 (A quadratic is \\O(n^2)\\ but not \\O(n)\\)** Let \\f(n) = 3n^2 + 5n\\.
+> **Definition 4 (Little-o notation (dominates))** Let \\f\\ and \\g\\ be functions from the positive integers to \\\[0, \infty)\\ with \\g(n) \> 0\\ for every \\n\\. We write \\f(n) = o(g(n))\\ if, for every constant \\\varepsilon\> 0\\, there is an integer \\n_0\\ such that
+>
+> \\f(n) \le \varepsilon\\ g(n) \quad \text{for every } n \ge n_0.\\
+>
+> That is, \\f\\ is eventually smaller than any fixed fraction of \\g\\, which is the strict counterpart of [Definition 1](#def-big-o). In this case we also say that \\g(n)\\ **dominates** \\f(n)\\.
+
+> **NOTE:**
+>
+> **Example 1**  
+>
+> #### A cubic dominates a quadratic
+>
+> Let \\f(n) = n^2\\ and \\g(n) = n^3\\. Let \\\varepsilon\> 0\\. Choose an integer \\n_0 \ge 1/\varepsilon\\. For every \\n \ge n_0\\ we have \\1/n \le 1/n_0 \le \varepsilon\\, so
+>
+> \\ f(n) = n^2 = \frac{1}{n} \\ n^3 \le \varepsilon\\ n^3 = \varepsilon\\ g(n). \\
+>
+> Hence \\n^2 = o(n^3)\\ by [Definition 4](#def-little-o), so \\n^3\\ dominates \\n^2\\.
+
+## 3 Examples
+
+> **NOTE:**
+>
+> **Example 2 (A quadratic is \\O(n^2)\\ but not \\O(n)\\)** Let \\f(n) = 3n^2 + 5n\\.
 >
 > For \\n \ge 5\\, we have \\5n \le n \cdot n = n^2\\, so
 >
@@ -50,7 +72,7 @@ The cost of an algorithm depends on the size \\n\\ of its input. Asymptotic nota
 
 > **NOTE:**
 >
-> **Example 2 (Counting the operations in an inner product)** The inner product of two vectors \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{x}}\vphantom{x}}, \mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{z}}\vphantom{z}}\in \mathbb{R}^D\\ is
+> **Example 3 (Counting the operations in an inner product)** The inner product of two vectors \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{x}}\vphantom{x}}, \mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{z}}\vphantom{z}}\in \mathbb{R}^D\\ is
 >
 > \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{x}}\vphantom{x}}^\top \mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{z}}\vphantom{z}}= x_1 z_1 + x_2 z_2 + \cdots + x_D z_D.\\
 >

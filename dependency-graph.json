@@ -30,6 +30,15 @@
    "external": false
   },
   {
+   "id": "cds/asymptotic-notation#def-little-o",
+   "site": "cds",
+   "page": "asymptotic-notation",
+   "div": "def-little-o",
+   "kind": "def",
+   "title": "Little-o notation (dominates)",
+   "external": false
+  },
+  {
    "id": "cds/kolmogorov-complexity#def-conditional-kolmogorov-complexity",
    "site": "cds",
    "page": "kolmogorov-complexity",
@@ -286,6 +295,10 @@
   [
    "cds/asymptotic-notation#def-big-theta",
    "cds/asymptotic-notation#def-big-omega"
+  ],
+  [
+   "cds/asymptotic-notation#def-little-o",
+   "cds/asymptotic-notation#def-big-o"
   ],
   [
    "cds/kolmogorov-complexity#def-conditional-kolmogorov-complexity",
