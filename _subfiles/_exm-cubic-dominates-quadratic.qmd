@@ -1,0 +1,15 @@
+:::{#exm-cubic-dominates-quadratic}
+<!-- no-figure: a one-line inequality -->
+#### A cubic dominates a quadratic
+
+Let $f(n) = n^2$ and $g(n) = n^3$, and let $\epsilon > 0$.
+Choose an integer $n_0 \ge 1/\epsilon$.
+For every $n \ge n_0$ we have $1/n \le 1/n_0 \le \epsilon$, so
+
+$$
+f(n) = n^2 = \frac{1}{n} \, n^3 \le \epsilon \, n^3 = \epsilon \, g(n).
+$$
+
+Hence $n^2 = o(n^3)$ by @def-little-o, so $n^3$ dominates $n^2$.
+
+:::

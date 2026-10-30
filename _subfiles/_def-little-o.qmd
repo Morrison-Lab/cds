@@ -1,0 +1,13 @@
+:::{#def-little-o}
+#### Little-o notation (dominates)
+
+Let $f$ and $g$ be functions from the positive integers to $[0, \infty)$ with $g(n) > 0$ for every $n$.
+We write $f(n) = o(g(n))$ if, for every constant $\epsilon > 0$,
+there is an integer $n_0$ such that
+
+$$f(n) \le \epsilon \, g(n) \quad \text{for every } n \ge n_0.$$
+
+That is, $f$ is eventually smaller than any fixed fraction of $g$.
+In this case we also say that $g(n)$ **dominates** $f(n)$.
+
+:::
